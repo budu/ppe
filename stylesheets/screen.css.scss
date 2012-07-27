@@ -2,6 +2,8 @@
 
 $font-size: 18px;
 
+$page-width: 1000px;
+
 // Fonts
 
 body {
@@ -11,29 +13,69 @@ body {
   }
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.4em; }
-
 #copyright_notice {
   font-size: 0.8em;
 }
 
 // Colors
 
-#copyright_notice {
-  color: #555152;
+#wrapper {
+  background-color: #f8f2e4;
+
+  footer {
+    color: #f8f2e4;
+    background-color: #2f2f1e;
+  }
+}
+
+// Borders & Shadows
+
+#wrapper {
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  footer {
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+  }
 }
 
 // Layout
 
 #wrapper {
   margin: auto;
-  width: 70%;
+  width: $page-width;
 
-  header {
-    .title {
-      float: right;
-      margin: 20px;
-    }
+  #content {
+    padding: 15px 25px;
+
+    p { margin: 0 0 15px; }
+
+    .more { width: $page-width - 2 * 15px; }
+  }
+
+  footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
   }
 }
+
+// Links
+
+a {
+  text-decoration: none;
+
+  &:link, &:visited, &:active {
+    color: #54f;
+  }
+  &:hover {
+    color: #98f;
+  }
+}
+
+// Classes
+
+.clear      { clear: both; }
+.hidden     { display: none; }
+.pull-right { float: right; }

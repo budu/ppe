@@ -3,21 +3,56 @@
 
   %head
     %meta{ charset: 'UTF-8' }
-    %meta{ name: 'description' , content: '' }
-    %meta{ name: 'keywords'    , content: '' }
+    %meta{ name: 'description' , content: @description }
+    %meta{ name: 'keywords'    , content: @keywords }
     %meta{ name: 'author'      , content: 'Nicolas Buduroi' }
 
-    %link{ type: 'text/css', rel: 'stylesheet', href: '/stylesheets/reset.css' }
-    %link{ type: 'text/css', rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Nunito:300' }
-    %link{ type: 'text/css', rel: 'stylesheet', href: '/stylesheets/screen.css' }
+    - @stylesheets.each do |href|
+      %link{ type: 'text/css', rel: 'stylesheet', href: href }
 
-    %title Philo pour enfants
+    - @javascripts.each do |src|
+      %script{ type: 'text/javascript', src: src }
+
+    %title= @title
 
   %body
     #wrapper
       %header
-        %img{ src: '/images/ppe.png', alt: 'Philo pour enfants' }
+        %img{ src: '/images/ppe.png', alt: @title }
       #content
-        TEST
+
+        #definition
+          %p
+            Le programme de Philosophie pour enfants a été fondé par le
+            grand philosophe Matthew Lipman. Dans le but de promouvoir
+            l’apprentissage de la pensée critique, créatrice et affective,
+            plusieurs romans pour les enfants et adolescents âgés de 3 et
+            18 ans ont été bâtis. La méthode est simple et vraiment
+            efficace: il s’agit d’abord de lire un conte philosophique, de
+            poser des questions et de dialoguer sur un sujet choisi par
+            les enfants.
+
+          .more.hidden
+            %p
+              Les enfants et adolescents philosophent naturellement. Leurs
+              nombreuses questions, leurs interrogations et leurs paroles
+              sont parfois très philosophiques. Chaque enfant et adolescent
+              possède ses questionnements et est doué d’une curiosité
+              propice au développement de la pensée. Évidemment, ils ont
+              besoin d’être guidés par un adulte animateur de Philosophie
+              pour enfants pour y arriver.
+
+            %p
+              L’enfant et l’adolescent sont déjà prêts à philosopher : ils
+              n’attendent que l’occasion pour le faire! Le plus tôt sera
+              donc le mieux et vous découvrirez en eux des philosophes
+              extraordinaires, surprenants et réfléchis grâce au programme
+              qui propose des activités et discussions adaptées à leurs
+              âges.
+
+          %a{ href: '#', class: 'show-more pull-right' } en savoir plus
+          .clear
+
+
       %footer
         %p#copyright_notice &copy; 2012 Nicolas Buduroi. Tous droits réservés.
