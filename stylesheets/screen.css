@@ -1,0 +1,22 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.4em; }
+
+#copyright_notice {
+  font-size: 0.8em; }
+
+#copyright_notice {
+  color: #555152; }
+
+#wrapper {
+  margin: auto;
+  width: 70%; }
+  #wrapper header .title {
+    float: right;
+    margin: 20px; }
