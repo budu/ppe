@@ -1,0 +1,39 @@
+// Variables
+
+$font-size: 18px;
+
+// Fonts
+
+body {
+  font: {
+    family: 'Nunito', sans-serif;
+    size: $font-size;
+  }
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.4em; }
+
+#copyright_notice {
+  font-size: 0.8em;
+}
+
+// Colors
+
+#copyright_notice {
+  color: #555152;
+}
+
+// Layout
+
+#wrapper {
+  margin: auto;
+  width: 70%;
+
+  header {
+    .title {
+      float: right;
+      margin: 20px;
+    }
+  }
+}
