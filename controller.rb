@@ -1,5 +1,7 @@
 ignore /Gemfile/
 ignore /readme.md/
+ignore /deploy/
+ignore /gh-pages/
 
 before 'index.html.haml' do
   @title = 'Philo pour enfants'
@@ -15,6 +17,6 @@ before 'index.html.haml' do
     '/javascripts/main.js'
   ]
 
-  @description = ''
-  @keywords = ''
+  @description = 'Philo pour enfants par Anne-Marie Duclos'
+  @keywords = 'Philosophie Enfants'
 end
