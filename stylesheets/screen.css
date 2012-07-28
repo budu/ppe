@@ -29,7 +29,7 @@ ul li {
     #wrapper #content p {
       margin: 0 0 15px; }
     #wrapper #content .more {
-      width: 600px; }
+      width: 599px; }
   #wrapper footer {
     margin: 20px 0 50px;
     padding: 20px 0;
@@ -37,7 +37,7 @@ ul li {
 
 .one-half, .two-third, .one-third, .one-fourth, .inner-content {
   float: left;
-  margin-right: 30px; }
+  margin-right: 28px; }
 
 .one {
   float: left;
@@ -47,10 +47,10 @@ ul li {
   width: 450px; }
 
 .one-third {
-  width: 300px; }
+  width: 301px; }
 
 .two-third {
-  width: 600px; }
+  width: 599px; }
 
 .one-fourth {
   width: 217px; }
