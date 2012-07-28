@@ -8,6 +8,9 @@ body {
 ul li {
   font-size: 0.8em; }
 
+body {
+  background-image: url("/images/background.png"); }
+
 #wrapper {
   background-color: #f8f2e4; }
   #wrapper footer {
