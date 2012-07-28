@@ -2,7 +2,10 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 18px; }
 
-#copyright_notice {
+.copyright_notice {
+  font-size: 0.6em; }
+
+ul li {
   font-size: 0.8em; }
 
 #wrapper {
@@ -26,11 +29,44 @@ body {
     #wrapper #content p {
       margin: 0 0 15px; }
     #wrapper #content .more {
-      width: 970px; }
+      width: 600px; }
   #wrapper footer {
-    margin-top: 20px;
+    margin: 20px 0 50px;
     padding: 20px 0;
     text-align: center; }
+
+.one-half, .two-third, .one-third, .one-fourth, .inner-content {
+  float: left;
+  margin-right: 30px; }
+
+.one {
+  float: left;
+  width: 960px; }
+
+.one-half {
+  width: 450px; }
+
+.one-third {
+  width: 300px; }
+
+.two-third {
+  width: 600px; }
+
+.one-fourth {
+  width: 217px; }
+
+.last {
+  margin-right: 0; }
+
+h2 {
+  margin: 10px 0 25px;
+  text-align: center; }
+
+h3 {
+  margin: 0 0 15px; }
+
+ul li {
+  margin-left: 30px; }
 
 a {
   text-decoration: none; }
@@ -47,3 +83,12 @@ a {
 
 .pull-right {
   float: right; }
+
+.justify {
+  text-align: justify; }
+
+.horizontal-line {
+  border-top: 1px solid #aaa;
+  float: left;
+  margin: 30px auto;
+  width: 100%; }
