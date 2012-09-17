@@ -31,6 +31,8 @@ body {
     padding: 15px 25px; }
     #wrapper #content p {
       margin: 0 0 15px; }
+      #wrapper #content p.so-links a {
+        margin-right: 20px; }
     #wrapper #content .more {
       width: 600px; }
   #wrapper footer {
