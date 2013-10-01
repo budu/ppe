@@ -33,6 +33,8 @@ body {
       margin: 0 0 15px; }
       #wrapper #content p.so-links a {
         margin-right: 10px; }
+        #wrapper #content p.so-links a img {
+          width: 15%; }
     #wrapper #content .more {
       width: 600px; }
   #wrapper footer {
