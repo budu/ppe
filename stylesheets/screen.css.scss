@@ -60,7 +60,12 @@ body {
     p {
       margin: 0 0 15px;
       &.so-links {
-        a { margin-right: 10px; }
+        a {
+          margin-right: 10px;
+          img {
+            width: 15%;
+          }
+        }
       }
     }
 
