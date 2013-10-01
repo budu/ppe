@@ -57,7 +57,12 @@ body {
   #content {
     padding: 15px 25px;
 
-    p { margin: 0 0 15px; }
+    p {
+      margin: 0 0 15px;
+      &.so-links {
+        a { margin-right: 10px; }
+      }
+    }
 
     .more { width: 600px; }
   }
