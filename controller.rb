@@ -20,7 +20,6 @@ before 'index.html.haml' do
   @description = 'Philo pour enfants par Anne-Marie Duclos'
   @keywords = 'Philosophie Enfants'
 
-  @book_url = 'https://www.presses-academiques.com' +
-    '/catalog/details/store/gb/book/978-3-8381-7112-8/' +
-    'la-philosophie-pour-enfants-comme-outil-de-compr%C3%A9hension-des-%C3%A9motions'
+  @book_url = 'http://www.amazon.ca/Anne-Marie-Duclos-Books/s' +
+    '?ie=UTF8&page=1&rh=n%3A916520%2Cp_27%3AAnne-Marie%20Duclos'
 end
